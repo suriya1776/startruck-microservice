@@ -1,0 +1,20 @@
+# deployment-1.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: email-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: email
+  template:
+    metadata:
+      labels:
+        app: email
+    spec:
+      containers:
+      - name: emails
+        image: suriya1776/startruck:emailv1
+        ports:
+        - containerPort: 8081
