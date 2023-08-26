@@ -1,0 +1,3 @@
+com\example\usermicroservice\UserController.class
+com\example\usermicroservice\RestTemplateConfig.class
+com\example\usermicroservice\UserMicroservice.class
